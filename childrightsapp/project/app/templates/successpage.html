@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #333; /* Dark background color */
+            color: #fff; /* White text color */
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            animation: fadeIn 0.5s ease-out; /* Fade-in animation for the body */
+        }
+
+        header {
+            background-color: #333; /* Dark color for the header */
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #ff8c00; /* Orange color for headings */
+        }
+
+        #i {
+            height: 76px;
+            width: 75px;
+            border-radius: 100%;
+            padding: 1%;
+            color: white;
+            background-color: #ff8c00; /* Orange color for the button */
+            margin: 10%;
+            display: inline-block;
+            text-align: center;
+            text-decoration: none;
+            font-size: 18px;
+            line-height: 76px;
+            transition: background-color 0.3s;
+        }
+
+        #i:hover {
+            background-color: #333; /* Dark color on hover */
+        }
+
+        /* Animation for the content */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Form Submitted Successfully</h1>
+    </header>
+
+    <a id="i" href="{% url 'home' %}">OK</a>
+
+</body>
+</html>
